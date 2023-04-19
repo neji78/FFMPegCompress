@@ -1,0 +1,25 @@
+#!/bin/sh
+
+ffmpegsrc/./configure --cpu=x86_64 --target-os=win64 --enable-static --disable-shared --disable-asm --disable-debug --disable-doc \
+--enable-zlib \
+--disable-iconv \
+--disable-encoders --disable-muxers --disable-decoders --disable-bsfs --disable-protocols --disable-parsers --disable-hwaccels --disable-demuxers \
+--disable-network \
+--enable-libx264 \
+--enable-encoder=mpeg4 \
+--enable-encoder=aac \
+--enable-decoder=h264 \
+--enable-decoder=mpeg4 \
+--enable-decoder=aac \
+--enable-decoder=hevc \
+--enable-decoder=mp3 \
+--enable-gpl \
+--enable-protocol=file \
+--enable-demuxer=mp3 \
+--enable-demuxer=wav \
+--enable-demuxer=ogg \
+--enable-demuxer=gsm \
+--enable-demuxer=aac \
+--enable-demuxer=mov \
+--enable-muxer=mp4 \
+--prefix=./windows/win64 \
